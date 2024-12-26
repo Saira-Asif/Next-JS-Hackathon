@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+
 export default function Footer() {
   return (
-    <div className="w-[90rem] h-[34.69rem]">
-      <div className="flex w-[78rem] h-[26rem] pt-[6.1rem] pb-[2.3rem] px-[6.25rem]">
-        <p className="pt-[12.8rem] pb-[8.3rem] pr-[8.5rem]  h-[4.5rem] font-poppins text-base font-normal leading-6 text-left text-[#9F9F9F]">
+    <div className="w-full bg-white">
+      <div className="flex flex-wrap lg:flex-nowrap w-full  mx-auto pt-10 pb-6 px-4 ">
+        <p className="w-full text-sm lg:text-base font-normal text-[#9F9F9F] mb-6 lg:mb-0 leading-6 md:flex md:items-center mr-[8.5rem] lg:ml-[6.376rem]">
           400 University Drive Suite 200 Coral
           <br />
           Gables,
@@ -12,40 +13,39 @@ export default function Footer() {
           FL 33134 USA
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-[144px] max-w-7xl mx-auto pt-[6.1rem]">
-          <div>
-            <p className="font-poppins text-[#9F9F9F] text-[16px] font-medium leading-[24px] mb-[53px]">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[144px]  w-full md:max-w-7xl md:mx-auto lg:flex-grow ">
+          <div className="w-full lg:w-auto">
+            <p className="text-sm lg:text-[16px] font-medium text-[#9F9F9F] mb-6">
               Link
             </p>
-
-            <ul className="space-y-[46px]">
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+            <ul className="space-y-4 lg:space-y-[46px]">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000]">
                 <Link href="/">Home</Link>
               </li>
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000]">
                 <Link href="/shop">Shop</Link>
               </li>
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000]">
                 <Link href="/about">About</Link>
               </li>
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000]">
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <p className="font-poppins text-[#9F9F9F] text-[16px] font-medium leading-[24px] mb-[53px]">
+          <div className="w-full">
+            <p className="text-sm lg:text-[16px] font-medium text-[#9F9F9F] mb-6 ">
               Help
             </p>
-            <ul className="space-y-[46px]">
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+            <ul className="space-y-4 lg:space-y-[46px]">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000] leading-[24px] cursor-pointer">
                 Payment Options
               </li>
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000] leading-[24px] cursor-pointer">
                 Returns
               </li>
-              <li className="font-poppins text-black text-[16px] font-medium leading-[24px] hover:text-cyan-600 ">
+              <li className="text-black text-sm lg:text-[16px] font-medium hover:text-[#800000] leading-[24px] cursor-pointer">
                 Privacy Policies
               </li>
             </ul>
@@ -53,28 +53,27 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="pl-[4.5rem] pt-[6.25rem] pr-[6.7rem] pb-[60rem] w-[18rem]">
-          <p className="font-poppins text-[#9F9F9F] text-[16px] font-medium leading-[24px] mb-[53px]">
+        <div className="w-full lg:w-auto mt-6 lg:mt-0 lg:ml-[4.5rem] lg:mr-[12.875rem]">
+          <p className="text-sm lg:text-[16px] font-medium text-[#9F9F9F] mb-4 lg:mb-6">
             Newsletter
           </p>
-          <div className="relative w-[18rem] h-[1.5rem] flex flex-row">
-            {/* Email Section */}
-            <p className="font-poppins text-[#9F9F9F] text-[14px] font-normal leading-[21px] underline decoration-black underline-offset-4 pr-[2.37rem]">
-              Enter Your Email Address
-            </p>
-
-            {/* Subscribe Section */}
-            <p className="font-poppins text-black text-[14px] font-medium leading-[21px] underline decoration-black underline-offset-4">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              className="border-b border-black outline-none text-sm lg:text-[14px] text-[#9F9F9F] w-full lg:w-auto"
+            />
+            <button className="text-black text-sm lg:text-[14px] font-medium underline hover:text-[#800000]">
               SUBSCRIBE
-            </p>
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="mt-[180px] px-[100px] ">
-        <Image src="/Line.png" alt="Line" width={1240} height={1} />
-        <p className="pt-[2.18rem] pr-[58rem] font-poppins text-black text-[16px] font-normal leading-[24px]">
-          2022 Meubel House. All rights reverved
+      <div className="mt-10 lg:mt-[180px] px-4 lg:px-[100px] pb-6 lg:pb-[2.375rem]">
+        <Image src="/Line.png" alt="Line" width={1240} height={1} className="w-full" />
+        <p className="pt-4 lg:pt-[2.18rem] text-center lg:text-left text-sm lg:text-[16px] text-black">
+          2022 Meubel House. All rights reserved
         </p>
       </div>
     </div>

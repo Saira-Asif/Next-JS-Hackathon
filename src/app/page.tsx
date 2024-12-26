@@ -5,402 +5,353 @@ import "./globals.css";
 export default function Home() {
   return (
  <>
-  {/* Hero Section */}
-  <div className="bg-[#FBEBB5]  h-[56.25rem] flex">
-    <div className="flex flex-col justify-center pl-[13rem] ">
-      <h2 className="text-black font-medium text-[64px]">Rocket single seater</h2>
-      <div className="pt-[2.18rem] pr-[19.6rem]">
-        <button className="text-black font-medium text-2xl pb-[0.8rem] hover:text-cyan-600">Shop Now</button>
-        <Image 
+ {/* Hero Section */}
+<div className="bg-[#FBEBB5] h-auto md:h-[56.25rem] flex flex-col-reverse md:flex-row items-center">
+  {/* Left Content */}
+  <div className="flex flex-col justify-center px-6 md:pl-[13rem] text-center md:text-left pb-4">
+    <h2 className="text-black font-medium text-[36px] md:text-[64px]">
+      Rocket single seater
+    </h2>
+    <div className="pt-4 md:pt-[2.18rem]">
+      <button className="text-black font-medium text-lg md:text-2xl pb-2 hover:text-[#800000]">
+        Shop Now
+      </button>
+      <Image 
         src="/Line2.png"
-        alt="Underline below shop now"
+        alt="Line"
         width={121}
-        height={1}/>
-      </div>
-    </div>
-   <div> 
-    <Image 
-    src="/sofa.png"
-    alt="sofa"
-    width={1000}
-    height={1000}
-    />  
+        height={1}
+        className="mx-auto md:mx-0"
+      />
     </div>
   </div>
-  {/* Product Section */}
-  <div className="w-[90rem] h-[42rem] bg-[#FAF4F4] flex flex-row justify-between">
-    <div className="w-[37.8rem] h-[35.12rem] pt-[3.1rem] pl-[6.25rem] pr-[1.8rem] pb-[3.6rem]">
-      <Image
-      src="/table1.png"
+
+  {/* Right Content */}
+  <div className="flex justify-center items-center">
+    <Image 
+      src="/sofa.png"
+      alt="sofa"
+      className="w-[300px] md:w-[700px] lg:w-[1000px] h-auto"
+      width={1000}
+      height={1000}
+    />  
+  </div>
+</div>
+
+ {/* Product Section */}
+<div className="w-full bg-[#FAF4F4] flex flex-col lg:flex-row px-4 lg:px-0 py-8 lg:py-8 justify-between lg:justify-around">
+  {/* Left Product */}
+  <div className="flex flex-col items-center lg:items-start w-full lg:w-[37.8rem] px-4 lg:px-16 py-4">
+    <Image
+      src="/table.png"
       alt="table"
       width={605}
-      height={562} />
-      <p className="text-black font-medium text-4xl leading-[54px] ">
+      height={562}
+    />
+    <p className="text-black font-medium text-2xl lg:text-4xl leading-[36px] lg:leading-[54px]">
       Side table
-      </p>
-      <button className="pt-[1.4rem] text-black font-medium text-2xl leading-9 pb-[1.18rem] hover:text-cyan-600">
+    </p>
+    <div className="mb-[7rem]">
+    <button className="mt-4 text-black font-medium text-lg lg:text-2xl hover:text-[#800000]">
       View More
-      </button>
-      <Image
-      src="/Line2.png"
+    </button>
+    <Image
+      src="/Line3.png"
       alt="Line"
-      width={121}
-      height={1} />
-    </div>
-    <div className="w-[37.8rem] h-[35.12rem] pt-[3.1rem] pl-[1.8rem] pr-[6.25rem] pb-[3.6rem]">
-      <Image
-      src="/mask.png"
-      alt="table"
-      width={605}
-      height={562} />
-      <p className="text-black font-medium text-4xl leading-[54px] mt-[100px]">
-      Side table
-      </p>
-      <button className="pt-[1.4rem] text-black font-medium text-2xl leading-9 pb-[1.188rem] hover:text-cyan-600">
-      View More
-      </button>
-      <Image
-      src="/Line2.png"
-      alt="Line"
-      width={121}
-      height={1} />
-    </div>
+      width={100}
+      height={1}
+      className="mt-2"
+    />
+    
     
   </div>
-
-    {/* Top Pick Section */}
-<div className="w-[90rem] h-[50.375rem] ">
-  <div className="flex flex-col justify-center items-center" >
-  <p className="text-black text-4xl font-medium leading-[54px] pt-[3.4rem]">
-    Top Picks For You
-  </p>
-  <p className="text-[#9F9F9F] text-base font-medium leading-6 pt-[0.8rem]">
-  Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.
-  </p>
   </div>
-        {/* Products */}/
-  <div className="flex flex-row">
-      {/* Prod 1 */}
-  <div className="w-[17.938rem] h-[23.25rem] mt-[4.063rem] ml-[6.25rem] mb-[4.313rem]">
+
+
+  {/* Right Product */}
+  <div className="flex flex-col items-center lg:items-start w-full lg:w-[37.8rem] px-4 lg:px-16 py-4">
     <Image
-    src="/TP1.png"
-    alt="Top Pick product 1"
-    width={287}
-    height={287} />
-    <div className="w-[12.125rem] h-[4.438rem] mt-[0.875rem] mr-[5.813rem]">
-      <p className="text-black font-normal text-base leading-6">
-      Trenton modular sofa_3
-      </p>
-      <p className="text-black font-medium text-2xl leading-9 mt-[0.688rem]">
-      Rs. 25,000.00
-      </p>
-    </div>
-  </div>
-      {/* Prod 2 */}
-      <div className="w-[17.938rem] h-[24.813rem] mt-[4.063rem] ml-[1.875rem] mr-[1.938rem] mb-[4.313rem]">
-      <Image
-    src="/TP2.png"
-    alt="Top Pick product 2"
-    width={287}
-    height={287} />
-    <div className="w-[13.25rem] h-[6rem] mt-[0.875rem] mr-[4.688rem]">
-      <p className="text-black font-normal text-base leading-6 ">
-      Granite dining table with dining chair
-      </p>
-      <p className="text-black font-medium text-2xl leading-9 mt-[0.75rem]">
-      Rs. 25,000.00
-      </p>
-    </div>
-      </div>
-        {/* Prod 3 */}
-        <div className="w-[17.938rem] h-[24.813rem] mt-[4.063rem] ml-[1.938rem] mr-[1.938rem] mb-[4.313rem]">
-      <Image
-    src="/TP3.png"
-    alt="Top Pick product 3"
-    width={287}
-    height={287} />
-    <div className="w-[13.25rem] h-[6rem] mt-[0.875rem] mr-[4.688rem]">
-      <p className="text-black font-normal text-base leading-6 ">
-      Outdoor bar table and stool      
-      </p>
-      <p className="text-black font-medium text-2xl leading-9 mt-[0.75rem]">
-      Rs. 25,000.00      
-      </p>
-    </div>
-      </div>
-      {/* Prod 4 */}
-      <div className="w-[17.938rem] h-[24.813rem] mt-[4.063rem] ml-[1.938rem] mr-[6.25rem] mb-[4.313rem]">
-      <Image
-    src="/Tp4.png"
-    alt="Top Pick product 4"
-    width={287}
-    height={287} />
-    <div className="w-[12.438rem] h-[6rem] mt-[0.875rem] mr-[5.5rem]">
-      <p className="text-black font-normal text-base leading-6 ">
-      Plain console with teak mirror      
-      </p>
-      <p className="text-black font-medium text-2xl leading-9 mt-[0.75rem]">
-      Rs. 25,000.00      
-      </p>
-    </div>
-      </div>
-      </div>
-
-
-      {/* View More */}
-      <div className="w-[7.188rem] h-[3.063rem] mb-[3.188rem] ml-[41.375rem] mr-[41.438rem]">
-        <button className="hover:text-cyan-600 text-black font-medium text-xl leading-[30px] pb-[1.188rem]">
-          View More
-        </button>
-        <Image
-      src="/Line2.png"
+      src="/sofa2.png"
+      alt="table"
+      width={605}
+      height={562} 
+      className="w-full max-w-[37.8rem] h-auto"
+    />
+    <p className="text-black font-medium text-2xl lg:text-4xl leading-[36px] lg:leading-[54px] mt-4">
+      Side table
+    </p>
+    <button className="mt-4 text-black font-medium text-lg lg:text-2xl hover:text-[#800000]">
+      View More
+    </button>
+    <Image
+      src="/Line3.png"
       alt="Line"
-      width={115}
-      height={1} />
-    </div>
+      width={100}
+      height={1}
+      className="mt-2"
+    />
+  </div>
 </div>
 
-    {/* New Arrival Section */}
-<div className="w-[90rem] h-[49.938rem] bg-[#FFF9E5] flex flex-row ">
-  <Image 
-  src="/Asgaardsofa.png"
-  alt="Sofa"
-  width={983}
-  height={799}/>
-  <div className="w-[20.688rem] h-[12.813rem] mt-[15.375rem] mr-[6.063rem] ml-[4.063rem] mb-[13.563rem]">
-    <div className="w-[20.688rem] h-[6.75rem] flex flex-col justify-center items-center mb-[2.063rem]">
-      <p className="text-black text-2xl font-medium leading-9">
-      New Arrivals
+{/* Top Pick Section */}
+<div className="max-w-[90rem] mx-auto px-4 lg:px-0 h-auto lg:h-[50.375rem]">
+  <div className="flex flex-col justify-center items-center text-center">
+    <p className="text-black text-2xl lg:text-4xl font-medium leading-7 lg:leading-[54px] pt-6 lg:pt-[3.4rem]">
+      Top Picks For You
+    </p>
+    <p className="text-[#9F9F9F] text-sm lg:text-base font-medium leading-5 lg:leading-6 pt-2 lg:pt-[0.8rem]">
+      Find a bright ideal to suit your taste with our great selection of suspension, floor, and table lights.
+    </p>
+  </div>
+
+  {/* Products */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-6 lg:mt-[4.063rem]">
+    {/* Product Card */}
+    {[
+      {
+        image: "/TP1.png",
+        title: "Trenton modular sofa_3",
+        price: "Rs. 25,000.00",
+      },
+      {
+        image: "/TP2.png",
+        title: "Granite dining table with dining chair",
+        price: "Rs. 25,000.00",
+      },
+      {
+        image: "/TP3.png",
+        title: "Outdoor bar table and stool",
+        price: "Rs. 25,000.00",
+      },
+      {
+        image: "/Tp4.png",
+        title: "Plain console with teak mirror",
+        price: "Rs. 25,000.00",
+      },
+    ].map((product, index) => (
+     <div
+  key={index}
+  className="flex flex-col items-center lg:items-start bg-white shadow-lg p-4 rounded-md transform transition-transform duration-300 hover:scale-105 touch:scale-105"
+>
+  <Image
+    src={product.image}
+    alt={`Top Pick product ${index + 1}`}
+    width={287}
+    height={287}
+    className="w-full h-auto rounded-lg"
+  />
+  <div className="mt-4 text-center lg:text-left">
+    <p className="text-black font-normal text-sm lg:text-base leading-5 lg:leading-6">
+      {product.title}
+    </p>
+    <p className="text-black font-medium text-lg lg:text-2xl leading-7 lg:leading-9 mt-2">
+      {product.price}
+    </p>
+  </div>
+</div>
+
+    ))}
+  </div>
+
+  {/* View More */}
+  <div className="flex flex-col items-center justify-center mt-8 lg:mt-[3.188rem] mb-2">
+    <button className="hover:text-[#800000] text-black font-medium text-sm lg:text-xl leading-6 lg:leading-[30px]">
+      View More
+    </button>
+    <Image
+      src="/Line3.png"
+      alt="Line"
+      width={90}
+      height={1}
+      className="mt-2"
+    />
+  </div>
+</div>
+
+
+{/* New Arrival Section */}
+<div className="w-full md:w-[100%]  h-auto bg-[#FFF9E5] flex flex-col md:flex-row items-center md:items-start p-4 md:p-0">
+  <div className="flex justify-center md:justify-start w-full md:w-[50%] mb-4 md:mb-0">
+    <Image 
+      src="/Asgaardsofa.png"
+      alt="Sofa"
+      width={983}
+      height={799}
+      className="max-w-full h-auto"
+    />
+  </div>
+
+  <div className="w-full md:w-[20.688rem] h-auto md:h-[12.813rem]  mt-8 md:mt-[15.375rem] md:ml-[4.063rem] md:mr-[6.063rem] md:mb-[13.563rem]">
+    <div className="w-full md:w-[20.688rem] h-[6.75rem] flex flex-col justify-center items-center mb-4 md:mb-[2.063rem]">
+      <p className="text-black text-xl md:text-2xl font-medium leading-7 md:leading-9 text-center">
+        New Arrivals
       </p>
-      <p className="text-black font-bold text-5xl leading-[72px]">
-      Asgaard sofa
+      <p className="text-black font-bold text-3xl md:text-5xl leading-[48px] md:leading-[72px] text-center">
+        Asgaard sofa
       </p>
     </div>
-    <div className="w-[15.938rem] h-[4rem] mt-[2.063rem] mx-[2.375rem] ">
-      <button className="border border-black text-center py-2 px-16 inline-block text-xl font-normal text-black leading-[30px] hover:text-cyan-600">
-      Order Now
+
+    <div className="w-full md:w-[15.938rem] h-[4rem] mt-4 md:mt-[2.063rem] mx-auto md:mx-[2.375rem]">
+      <button className="w-full md:w-auto border border-black text-center py-2 px-8 md:px-16 inline-block text-lg md:text-xl font-normal text-black leading-[30px] hover:text-[#800000]">
+        Order Now
       </button>
     </div>
-
   </div>
 </div>
 
-
-    {/*Our Blogs Section */}
-<div className="w-[90rem] h-[59rem]">
-      {/*Our Blog Heading */}
-  <div className="w-[29.938rem] h-[5.688rem] mt-[3.438rem] mr-[30.063rem] ml-[30rem] mb-[4.063rem] flex flex-col justify-center items-center">
-<p className="text-black font-medium text-4xl leading-[54px] mb-[0.813rem]">
-Our Blogs
-</p>
-<p className="text-[#9F9F9F] font-medium text-base leading-6 mt-[0.813rem]">
-Find a bright ideal to suit your taste with our great selection
-</p>
+{/* Our Blogs Section */}
+<div className="w-full bg-white py-8">
+  {/* Our Blog Heading */}
+  <div className="max-w-screen-lg mx-auto text-center px-4">
+    <h2 className="text-black font-medium text-3xl md:text-4xl leading-[54px] mb-4">
+      Our Blogs
+    </h2>
+    <p className="text-[#9F9F9F] font-medium text-sm md:text-base leading-6">
+      Find a bright idea to suit your taste with our great selection
+    </p>
   </div>
-    {/*Blogs and View All Post Btn*/}
-    <div className="w-[77.5rem] h-[42.438rem] mt-[4.063rem] mx-[6.25rem] mb-[3.375rem]">
-    {/*Blogs */}
-<div className="w-[77.5rem] h-[34.688rem] mb-[4.688rem] flex flex-row">
-      {/*Blog 1 */}
-      <div className="w-[24.563rem] h-[34.688rem] mr-[1.938rem]">
+
+  {/* Blogs and View All Post Button */}
+  <div className="max-w-screen-xl mx-auto px-4 mt-8">
+    {/* Blogs */}
+    <div className="flex flex-wrap justify-center gap-8">
+      {/* Blog 1 */}
+      <div className="w-full md:w-[24rem] flex flex-col items-center">
         <Image
-        src="/blog1.png"
-        alt="Picture of Keyboard, headphones and coffee"
-        width={393}
-        height={393}/>
-        <div className="mt-[2.063rem] w-[24.563rem] h-[8.063rem] mx-[1.688rem] flex flex-col items-center ">
-          <p className="text-black font-normal text-xl leading-[30px] mb-[0.625rem]">
-          Going all-in with millennial design
-          </p>
-          <div className="w-[8.125rem] h-[2.875rem] mb-[1.188rem]">
-            <button className="text-black text-2xl font-medium leading-9 mb-[0.625rem] hover:text-cyan-600">
+          src="/blog1.png"
+          alt="Picture of Keyboard, headphones, and coffee"
+          width={393}
+          height={393}
+          className="w-full h-auto shadow-lg rounded-md transform transition-transform duration-300 hover:scale-105 touch:scale-105"
+        />
+        <div className="mt-4 text-center">
+          <h3 className="text-black font-normal text-lg md:text-xl leading-[30px] mb-2">
+            Going all-in with millennial design
+          </h3>
+          <button className="text-black text-base md:text-xl font-medium hover:text-[#800000]">
             Read More
-            </button>
-            <div className="mb-[1.188rem]">
-            <Image
-      src="/Line3.png"
-      alt="Line"
-      width={115}
-      height={1} />
-      </div>
+          </button>
+          <div className="w-20 mx-auto my-2">
+            <Image src="/Line3.png" alt="Line" width={80} height={1} />
           </div>
-          <div className=" flex flex-row mx-[3.625rem]">
-            <div className="w-[4.563rem] h-[1.5rem] mr-[1.188rem] flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-              src="/time.png"
-              alt="time"
-              width={18}
-              height={17.83}
-              />
-              </div>
-              <p className="text-black font-light text-base leading-6">
-              5 min
-              </p>
+          <div className="flex justify-center space-x-8 text-sm md:text-base text-gray-500">
+            <div className="flex items-center">
+              <Image src="/time.png" alt="Time" width={18} height={18} />
+              <span className="ml-2">5 min</span>
             </div>
-            <div className="ml-[1.188rem]  flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-                src="/calender.png"
-                alt="calender"
-                width={22}
-                height={22}
-                />
-              </div>
-                <p className="text-black text-base font-light leading-6">
-                12th Oct 2022
-                </p>
+            <div className="flex items-center">
+              <Image src="/calender.png" alt="Calendar" width={18} height={18} />
+              <span className="ml-2">12th Oct 2022</span>
             </div>
           </div>
         </div>
       </div>
 
-{/*Blog 2*/}
-<div className="w-[24.563rem] h-[34.688rem] mr-[1.938rem]">
+      {/* Blog 2 */}
+      <div className="w-full md:w-[24rem] flex flex-col items-center">
         <Image
-        src="/blog2.png"
-        alt="Picture of Laptop"
-        width={393}
-        height={393}/>
-        <div className="mt-[2.063rem] w-[24.563rem] h-[8.063rem] mx-[1.688rem] flex flex-col items-center ">
-          <p className="text-black font-normal text-xl leading-[30px] mb-[0.625rem]">
-          Going all-in with millennial design
-          </p>
-          <div className="w-[8.125rem] h-[2.875rem] mb-[1.188rem]">
-            <button className="text-black text-2xl font-medium leading-9 mb-[0.625rem] hover:text-cyan-600">
+          src="/blog2.png"
+          alt="Picture of a minimalist desk setup"
+          width={393}
+          height={393}
+          className="w-full h-auto shadow-lg rounded-md transform transition-transform duration-300 hover:scale-105 touch:scale-105"
+        />
+        <div className="mt-4 text-center">
+          <h3 className="text-black font-normal text-lg md:text-xl leading-[30px] mb-2">
+            Exploring minimalist workspace vibes
+          </h3>
+          <button className="text-black text-base md:text-xl font-medium hover:text-[#800000]">
             Read More
-            </button>
-            <div className="mb-[1.188rem]">
-            <Image
-      src="/Line3.png"
-      alt="Line"
-      width={115}
-      height={1} />
-      </div>
+          </button>
+          <div className="w-20 mx-auto my-2">
+            <Image src="/Line3.png" alt="Line" width={80} height={1} />
           </div>
-          <div className=" flex flex-row mx-[3.625rem]">
-            <div className="w-[4.563rem] h-[1.5rem] mr-[1.188rem] flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-              src="/time.png"
-              alt="time"
-              width={18}
-              height={17.83}
-              />
-              </div>
-              <p className="text-black font-light text-base leading-6">
-              5 min
-              </p>
+          <div className="flex justify-center space-x-8 text-sm md:text-base text-gray-500">
+            <div className="flex items-center">
+              <Image src="/time.png" alt="Time" width={18} height={18} />
+              <span className="ml-2">3 min</span>
             </div>
-            <div className="ml-[1.188rem]  flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-                src="/calender.png"
-                alt="calender"
-                width={22}
-                height={22}
-                />
-              </div>
-                <p className="text-black text-base font-light leading-6">
-                12th Oct 2022
-                </p>
+            <div className="flex items-center">
+              <Image src="/calender.png" alt="Calendar" width={18} height={18} />
+              <span className="ml-2">8th Sep 2022</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/*Blog 3*/}
-      <div className="w-[24.563rem] h-[34.688rem] mr-[1.938rem]">
+      {/* Blog 3 */}
+      <div className="w-full md:w-[24rem] flex flex-col items-center">
         <Image
-        src="/blog3.png"
-        alt="Picture of Two Laptops"
-        width={393}
-        height={393}/>
-        <div className="mt-[2.063rem] w-[24.563rem] h-[8.063rem] mx-[1.688rem] flex flex-col items-center ">
-          <p className="text-black font-normal text-xl leading-[30px] mb-[0.625rem]">
-          Going all-in with millennial design
-          </p>
-          <div className="w-[8.125rem] h-[2.875rem] mb-[1.188rem]">
-            <button className="text-black text-2xl font-medium leading-9 mb-[0.625rem] hover:text-cyan-600">
+          src="/blog3.png"
+          alt="Picture of a coffee cup with a book"
+          width={393}
+          height={393}
+          className="w-full h-auto shadow-lg rounded-md transform transition-transform duration-300 hover:scale-105 touch:scale-105"
+        />
+        <div className="mt-4 text-center">
+          <h3 className="text-black font-normal text-lg md:text-xl leading-[30px] mb-2">
+            The art of mindful coffee breaks
+          </h3>
+          <button className="text-black text-base md:text-xl font-medium hover:text-[#800000]">
             Read More
-            </button>
-            <div className="mb-[1.188rem]">
-            <Image
-      src="/Line3.png"
-      alt="Line"
-      width={115}
-      height={1} />
-      </div>
+          </button>
+          <div className="w-20 mx-auto my-2">
+            <Image src="/Line3.png" alt="Line" width={80} height={1} />
           </div>
-          <div className=" flex flex-row mx-[3.625rem]">
-            <div className="w-[4.563rem] h-[1.5rem] mr-[1.188rem] flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-              src="/time.png"
-              alt="time"
-              width={18}
-              height={17.83}
-              />
-              </div>
-              <p className="text-black font-light text-base leading-6">
-              5 min
-              </p>
+          <div className="flex justify-center space-x-8 text-sm md:text-base text-gray-500">
+            <div className="flex items-center">
+              <Image src="/time.png" alt="Time" width={18} height={18} />
+              <span className="ml-2">7 min</span>
             </div>
-            <div className="ml-[1.188rem]  flex flex-row">
-              <div className="mr-[0.625rem]">
-                <Image 
-                src="/calender.png"
-                alt="calender"
-                width={22}
-                height={22}
-                />
-              </div>
-                <p className="text-black text-base font-light leading-6">
-                12th Oct 2022
-                </p>
+            <div className="flex items-center">
+              <Image src="/calender.png" alt="Calendar" width={18} height={18} />
+              <span className="ml-2">20th Aug 2022</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-</div>
-    {/*View All Posts */}
-    <div className=" flex flex-col justify-center items-center">
-    <button className="hover:text-cyan-600 text-black font-medium text-xl leading-[30px] pb-[1.188rem]">
-          View All Post
-        </button>
-        <Image
+    {/* View All Posts */}
+    <div className="text-center mt-8 flex flex-col justify-center items-center">
+      <button className="text-black font-medium text-base md:text-xl hover:text-[#800000] pb-[1.188rem]">
+        View All Posts
+      </button>
+      <Image
       src="/Line2.png"
       alt="Line"
       width={115}
       height={1} />
     </div>
-
-    </div>
+  </div>
 </div>
 
-    {/*Instagram Section */}
-<div className="relative  ">
+ {/* Instagram Section */}
+<div className="relative w-full">
   <Image
-  src="/insta.jpg"
-  alt="insta"
-  width={1440}
-  height={450}
-  className="opacity-15 object-cover w-full h-auto"/>
-  <div className="absolute inset-0 flex flex-col justify-center items-center w-[28.375rem] h-[12.625rem] my-[124px] mx-[493px] ">
-    <div className="text-center gap-">
-      <h3 className="text-black text-6xl font-bold leading-[90px]">
+    src="/insta.jpg"
+    alt="insta"
+    width={1440}
+    height={450}
+    className="opacity-15 object-cover w-full h-[250px] sm:h-[350px] md:h-[450px]"
+  />
+  <div className="absolute inset-0 flex flex-col justify-center items-center px-4">
+    <div className="text-center">
+      <h3 className="text-black text-2xl sm:text-4xl md:text-6xl font-bold leading-tight md:leading-[90px]">
         Our Instagram
       </h3>
-      <p className="text-xl font-normal leading-[30px]">
-      Follow our store on Instagram
+      <p className="text-sm sm:text-lg md:text-xl font-normal leading-5 md:leading-[30px] mt-2">
+        Follow our store on Instagram
       </p>
     </div>
-    <div className="mt-[1.125rem]">
-      <button className="rounded-[50px] bg-[#FAF4F4] shadow-lg py-[17px] px-[81px] ">Follow Us</button>
+    <div className="mt-4">
+      <button className="rounded-[50px] bg-[#FAF4F4] shadow-lg py-2 px-6 sm:py-[17px] sm:px-[81px] text-sm sm:text-base hover:bg-black hover:text-white transition-all duration-300">
+        Follow Us
+      </button>
     </div>
   </div>
 </div>
+
   </>
   );
 
