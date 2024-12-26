@@ -1,14 +1,5 @@
 import Image from "next/image";
 import Banner from "../components/Banner";
-import {useState} from "react";
-
-interface Product {
-    id:number;
-    name:string;
-    price:number;
-    image:string;
-}
-
 
 export default function Shop() {
 return (
