@@ -1,8 +1,5 @@
 // components/CartSidebar.tsx
-import { useState } from "react";
 import Image from "next/image";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 interface CartSidebarProps {
   cartSidebarOpen: boolean;
   toggleCartSidebar: () => void;
